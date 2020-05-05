@@ -16,14 +16,11 @@ build:
   noarch: generic
   merge_build_host: True  # [win]
   number: 1002
-  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
-  build:
-
   host:
     - r-base
     - r-r.methodss3 >=1.7.1
@@ -42,22 +39,18 @@ test:
 
 about:
   home: https://github.com/HenrikBengtsson/R.matlab
-  license: LGPL (>= 2.1)
+  license: LGPL-2.1-only
   summary: Methods readMat() and writeMat() for reading and writing MAT files.  For user with
     MATLAB v6 or newer installed (either locally or on a remote host), the package also
     provides methods for controlling MATLAB (trademark) via R and sending and retrieving
     data between R and MATLAB.
   license_family: LGPL
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
 
 # Package: R.matlab
 # Version: 3.6.2
