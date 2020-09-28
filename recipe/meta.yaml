@@ -13,14 +13,16 @@ source:
   sha256: 1ba338f470a24b7f6ef68cadbd04eb468ead4a689f263d2642408ad591b786bb
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
+  number: 1003
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
+  build:
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-r.methodss3 >=1.7.1
