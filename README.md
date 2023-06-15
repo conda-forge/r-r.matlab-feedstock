@@ -1,11 +1,11 @@
-About r-r.matlab
-================
+About r-r.matlab-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.matlab-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/HenrikBengtsson/R.matlab
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.matlab-feedstock/blob/main/LICENSE.txt)
 
 Summary: Methods readMat() and writeMat() for reading and writing MAT files.  For user with MATLAB v6 or newer installed (either locally or on a remote host), the package also provides methods for controlling MATLAB (trademark) via R and sending and retrieving data between R and MATLAB.
 
