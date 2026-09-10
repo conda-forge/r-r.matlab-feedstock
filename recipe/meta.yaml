@@ -1,4 +1,4 @@
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.matlab_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.matlab/R.matlab_{{ version }}.tar.gz
-  sha256: d713522268a1206555610938350137ea022e07e27fa9cdd73c02fae8d1a43dda
+  sha256: 29af23200fdddb21670e45516fa148f1b522efd453b05e9aef5410e1e60c4d1d
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
